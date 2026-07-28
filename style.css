@@ -80,3 +80,127 @@ footer {
     color: #666;
     font-size: 0.9rem;
 }
+
+.profile-page {
+    box-sizing: border-box;
+    max-width: none;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+.profile-card {
+    box-sizing: border-box;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+}
+
+.profile-card section {
+    margin-bottom: 24px;
+}
+
+.profile-card section:last-child {
+    margin-bottom: 0;
+}
+
+.profile-header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.profile-avatar {
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.profile-header h1 {
+    margin-bottom: 8px;
+}
+
+.profile-role {
+    color: #666;
+}
+
+.profile-about h2,
+.profile-details h2 {
+    margin-bottom: 12px;
+    color: blue;
+}
+
+.profile-details p {
+    margin-bottom: 8px;
+}
+
+.skills-page {
+    box-sizing: border-box;
+    max-width: none;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+.skills-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    box-sizing: border-box;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    border-color: blue;
+    box-shadow: 0 10px 24px rgba(0, 0, 255, 0.12);
+}
+
+.skill-card h2 {
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.skill-card p {
+    color: #555;
+}
+
+@media (min-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
